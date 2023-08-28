@@ -10,20 +10,20 @@ const fs = require('fs-extra')
  global.github = 'https://github.com/nipuna15' 
  global.location = 'Sri lanka, Monaragala' 
  global.gurl = 'https://instagram.com/' // add your username 
- global.sudo = process.env.SUDO || '919628516236' 
- global.devs = '919628516236'; 
+ global.sudo = process.env.SUDO || "," 
+ global.devs = "," ; 
  global.website = 'https://github.com/' //wa.me/+91000000000000 
  global.THUMB_IMAGE = process.env.THUMB_IMAGE || '' 
  module.exports = { 
-   botname:   process.env.BOT_NAME === undefined ? '' : process.env.BOT_NAME, 
-   ownername: process.env.OWNER_NAME === undefined ? '' : process.env.OWNER_NAME,  
+   botname:   process.env.BOT_NAME === undefined ? 'RICSON-MD' : process.env.BOT_NAME, 
+   ownername: process.env.OWNER_NAME === undefined ? 'KibetKE🇰🇪' : process.env.OWNER_NAME,  
    author:  process.env.PACK_INFO.split(";")[0] === undefined ? '' : process.env.PACK_INFO.split(";")[0], 
-   auto_read_status :  process.env.AUTO_READ_STATUS === undefined ? false : process.env.AUTO_READ_STATUS, 
+   auto_read_status :  process.env.AUTO_READ_STATUS === undefined ? true : process.env.AUTO_READ_STATUS, 
    packname:  process.env.PACK_INFO.split(";")[1] === undefined ? '-' : process.env.PACK_INFO.split(";")[1],
    sessionName:  process.env.SESSION_ID === undefined ? false : process.env.SESSION_ID, 
    autoreaction:  process.env.AUTO_REACTION  === undefined ? false : process.env.AUTO_REACTION , 
    antibadword :  process.env.ANTI_BAD_WORD === undefined ? 'nbwoed' : process.env.ANTI_BAD_WORD, 
-   alwaysonline:  process.env.ALWAYS_ONLINE === undefined ? false : process.env.ALWAYS_ONLINE,
+   alwaysonline:  process.env.ALWAYS_ONLINE === undefined ? true : process.env.ALWAYS_ONLINE,
 voice  :  process.env.AUTO_VOICE === undefined ? false : process.env.AUTO_VOICE, 
    antifake : process.env.FAKE_COUNTRY_CODE === undefined ? '971' : process.env.FAKE_COUNTRY_CODE, 
    readmessage:  process.env.READ_MESSAGE === undefined ? false : process.env.READ_MESSAGE, 
@@ -36,7 +36,7 @@ voice  :  process.env.AUTO_VOICE === undefined ? false : process.env.AUTO_VOICE,
    antilinkaction: process.env.ANTILINK_ACTION === undefined ? 'remove' : process.env.ANTILINK_ACTION, 
    BRANCH: 'main',  
    ALIVE_MESSAGE:  process.env.ALIVE_MESSAGE === undefined ? '' : process.env.ALIVE_MESSAGE, 
-   autobio:  process.env.AUTO_BIO === undefined ? false : process.env.AUTO_BIO, 
+   autobio:  process.env.AUTO_BIO === undefined ? true : process.env.AUTO_BIO, 
    OPENAI_API_KEY:  process.env.OPENAI_API_KEY === undefined ? false : process.env.OPENAI_API_KEY, 
    heroku:  process.env.heroku === undefined ? false : process.env.heroku, 
    HEROKU: { 
